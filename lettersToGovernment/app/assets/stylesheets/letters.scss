@@ -1,3 +1,20 @@
 // Place all the styles related to the Letters controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	background-color: #F9F9F9;
+}
+
+#letter-items-section{
+	background: white;
+	table{
+		width: 100%;
+	}
+	.buttons{
+		float: left;
+	}
+	.tags{
+		float: right;
+	}
+}
