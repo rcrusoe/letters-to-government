@@ -10,46 +10,50 @@
 
 <div class="ui stackable grid">
   <div class="two wide column"></div>
-  <div class="three wide column">
+  <div class="two wide column">
     
   </div>
-  <div class="six wide column" id = "letter-items-section">
+  <div class="eight wide column" id = "letter-items-section">
     <table class="ui very basic collapsing celled table">
       <tbody>
         <% @letters.each do |letter| %>
-          <tr>
-            <td>
-              <h4 class="ui header">
-                <div class="content">
-                  <%= letter.title %>
-                  <div class="sub header"><%= letter.subject %>
-                </div>
-              </h4>
-              <div class="buttons">
-                <button class="ui basic compact tiny button">
-                  <i class="caret up icon"></i>
-                  445
-                </button>
-                <button class="ui basic compact tiny button">
-                  <i class="comments icon"></i>
-                  23
-                </button>
-              </div>
-              <div class="tags">
-                <div class="ui label">
-                  Gun Violence
-                </div>
-                <div class="ui label">
-                  LGBT
-                </div>
-              </div>
-            </td>
-          </tr>
+            <tr>
+              <td>
+                <%= link_to letter do %>
+                  <h4 class="ui header">
+                    <div class="content">
+                      <%= letter.title %>
+                      <div class="sub header"><%= letter.subject %>
+                    </div>
+                    <div class="metadata">
+                      <div class="buttons">
+                        <button class="ui basic compact tiny button">
+                          <i class="caret up icon"></i>
+                          445
+                        </button>
+                        <button class="ui basic compact tiny button">
+                          <i class="comments icon"></i>
+                          23
+                        </button>
+                      </div>
+                      <div class="tags">
+                        <div class="ui label">
+                          Gun Violence
+                        </div>
+                        <div class="ui label">
+                          LGBT
+                        </div>
+                      </div>
+                    </div>
+                  </h4>
+                <% end %>
+              </td>
+            </tr>
         <% end %>
       </tbody>
     </table>
   </div>
-  <div class="three wide column">
+  <div class="two wide column">
     
   </div>
   <div class="two wide column"></div>

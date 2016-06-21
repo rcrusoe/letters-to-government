@@ -8,13 +8,36 @@ body{
 
 #letter-items-section{
 	background: white;
+	padding: 0;
+	border: 1px solid #F2F2F2;
 	table{
+		margin: 0;
 		width: 100%;
 	}
-	.buttons{
-		float: left;
+	.ui.header .content{
+		width: 100%;
+		padding: 1em !important;
 	}
-	.tags{
-		float: right;
+	.metadata{
+		width: 100%;
+		margin-top: 0.5em;
+		.buttons{
+			float: left;
+			.ui.button > .icon:not(.button){
+				margin-right: 0.25em;
+			}
+		}
+		.tags{
+			float: right;
+			.ui.label{
+				margin-left: 0.25em;
+			}
+		}
+	}
+	.ui.basic.table tbody tr:hover{
+		background-color: #F9F9F9;
+	}
+	.ui.table tr td{
+		border-top: 1px solid #F2F2F2;
 	}
 }
