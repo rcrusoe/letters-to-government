@@ -1,19 +1,39 @@
 <p id="notice"><%= notice %></p>
 
-<div class="ui stackable grid">
-  <div class="two wide column"></div>
+<div class="ui stackable grid" id="menu">
+  <div class="two wide column tablet only computer only"></div>
   <div class="twelve wide column">
-    <%= render 'header' %>
+    <%= render 'menu' %>
   </div>
-  <div class="two wide column"></div>
+  <div class="two wide column tablet only computer only"></div>
 </div>
 
 <div class="ui stackable grid">
-  <div class="two wide column"></div>
-  <div class="two wide column">
-    
+  <div class="two wide column tablet only computer only"></div>
+  <div class="two wide column tablet only computer only" id="topic-list">
+    <div class="ui vertical text menu">
+      <div class="header item">Topics</div>
+      <a class="item">
+        Gun Violence
+      </a>
+      <a class="item">
+        LGBT
+      </a>
+      <a class="item">
+        Clean Energy
+      </a>
+      <a class="item">
+        ISIS
+      </a>
+      <a class="item">
+        Affordable Healthcare
+      </a>
+      <a class="item">
+        Student Debt
+      </a>
+    </div>
   </div>
-  <div class="eight wide column" id = "letter-items-section">
+  <div class="eight wide column" id = "letter-list">
     <table class="ui very basic collapsing celled table">
       <tbody>
         <% @letters.each do |letter| %>
@@ -53,8 +73,8 @@
       </tbody>
     </table>
   </div>
-  <div class="two wide column">
+  <div class="two wide column tablet only computer only">
     
   </div>
-  <div class="two wide column"></div>
+  <div class="two wide column tablet only computer only"></div>
 </div>
