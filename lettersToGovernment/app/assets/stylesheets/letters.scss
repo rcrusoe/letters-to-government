@@ -80,7 +80,6 @@ body{
 
 #back{
 	background-color: #FFFFFF;
-	height: 100vh;
 	i{
 		margin: 45px 0 0 45px;
 	}
@@ -111,8 +110,11 @@ i.inverted.bordered.grey.icon, i.inverted.circular.grey.icon{
 		.checkbox{
 			display: block;
 		}
-		.ui.form input[type="checkbox"]{
-			vertical-align: middle !important;
-		}
+	}
+	.ui.form textarea, .ui.form input[type="checkbox"]{
+		vertical-align: middle !important;
+	}
+	form input, form textarea{
+		margin: 1em 0.75em !important;
 	}
 }
