@@ -1,15 +1,31 @@
-<%= simple_form_for(@letter, html: { multipart: true }) do |f| %>
-	<%= f.error_notification %>
+<div class="ui form">
+	<%= simple_form_for(@letter, html: { multipart: true }) do |f| %>
+		<%= f.error_notification %>
 
-	<div class="form-inputs">
-	<%= f.input :title %>
-	<%= f.input :subject %>
-	<%= f.input :body %>
-	</div>
+		<div class="form-inputs">
+		<%= f.input :title%>
+		<%= f.input :subject%>
+		<%= f.input :body %>
+		</div>
 
-	<%= f.association :representatives, as: :check_boxes, collection: Representative.order(:first_name), label_method: :full_name %>
+		<divs>
+			<%= f.association :representatives, collection: Representative.order(:first_name), label_method: :full_name, as: :check_boxes %>
+		</divs>
 
-	<div class="form-actions">
-	<%= f.button :submit %>
-	</div>
-<% end %>
+		<select name="gender" class="ui dropdown" multiple="" id="select-representatives">
+		  <option value="">Gender</option>
+		  <option value="male">Male</option>
+		  <option value="female">Female</option>
+		</select>
+
+		<div class="form-actions">
+		<%= f.button :submit, class: 'ui blue button' %>
+		</div>
+	<% end %>
+</div>
+
+<script>
+$('#select-representatives')
+  .dropdown()
+;
+</script>

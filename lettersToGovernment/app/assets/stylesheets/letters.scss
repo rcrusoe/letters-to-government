@@ -6,6 +6,12 @@ body{
 	background-color: #F9F9F9;
 }
 
+/*
+**
+** Index
+**
+*/
+
 #menu{
 	background-color: #FFFFFF;
 	margin-bottom: 2em;
@@ -63,5 +69,50 @@ body{
 	}
 	.ui.table tr td{
 		border-top: 1px solid #F2F2F2;
+	}
+}
+
+/*
+**
+** New
+**
+*/
+
+#back{
+	background-color: #FFFFFF;
+	height: 100vh;
+	i{
+		margin: 45px 0 0 45px;
+	}
+}
+
+i.inverted.bordered.grey.icon, i.inverted.circular.grey.icon{
+	background-color: #BBBBBB !important;
+}
+
+#new-letter-form{
+	background-color: #FFFFFF;
+	border-left: 1px solid #F2F2F2;
+	padding-left: 0;
+	.banner{
+		background-color: #93BB96;
+		text-align: center;
+		color: white;
+		padding: 40px 0;
+		h3{
+		margin-top: 0;
+		}
+	}
+	form{
+		margin: 2em;
+		input, textarea{
+			margin: 1em 0;
+		}
+		.checkbox{
+			display: block;
+		}
+		.ui.form input[type="checkbox"]{
+			vertical-align: middle !important;
+		}
 	}
 }

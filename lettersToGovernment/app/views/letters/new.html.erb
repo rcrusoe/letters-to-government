@@ -1,11 +1,14 @@
 <div class="ui stackable grid">
-  <div class="two wide column">
+  <div class="two wide column" id="back">
   	<%= link_to letters_path do %>
-  		<i class="remove circular inverted icon"></i>
+  		<i class="grey remove circular inverted icon"></i>
   	<% end %>
   </div>
-  <div class="fourteen wide column">
-		<%= render 'form' %>
+  <div class="fourteen wide column" id="new-letter-form">
+  	<div class="banner">
+  		<h2>Write a new letter</h2>
+  		<h3>Share your message and others may send it!</h3>
+  	</div>
+	<%= render 'form' %>
   </div>
 </div>
-
