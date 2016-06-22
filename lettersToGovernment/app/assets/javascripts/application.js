@@ -15,4 +15,3 @@
 //= require turbolinks
 //= require cocoon
 //= require semantic-ui
-//= require semantic-ui/dropdown
