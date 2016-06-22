@@ -3,15 +3,17 @@
 		<%= f.error_notification %>
 
 		<div class="form-inputs">
-		<%= f.input :title%>
-		<%= f.input :subject%>
-		<%= f.input :body %>
+			<%= f.input :title, placeholder: 'Enter a title for this letter' %>
+			<%= f.input :subject, placeholder: 'Enter an email subject' %>
+			<%= f.input :body, placeholder: 'Write your letter...' %>
 		</div>
 
-		<divs>
+		<div class="representatives">
 			<%= f.association :representatives, collection: Representative.order(:first_name), label_method: :full_name, as: :check_boxes %>
-		</divs>
-
+		</div>
+		
+		
+		
 		<!--
 		<select name="gender" class="ui dropdown" multiple="" id="select-representatives">
 		  <option value="">Gender</option>
@@ -19,9 +21,10 @@
 		  <option value="female">Female</option>
 		</select>
 		-->
+		
 
 		<div class="form-actions">
-		<%= f.button :submit, class: 'ui blue button' %>
+			<%= f.button :submit, class: 'ui blue button' %>
 		</div>
 	<% end %>
 </div>
@@ -30,4 +33,3 @@
 $('#select-representatives')
   .dropdown()
 ;
-</script>

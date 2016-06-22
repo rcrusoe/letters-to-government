@@ -103,6 +103,7 @@ i.inverted.bordered.grey.icon, i.inverted.circular.grey.icon{
 		}
 	}
 	form{
+		font-size: 1.125em;
 		margin: 2em;
 		input, textarea{
 			margin: 1em 0;
@@ -115,6 +116,34 @@ i.inverted.bordered.grey.icon, i.inverted.circular.grey.icon{
 		vertical-align: middle !important;
 	}
 	form input, form textarea{
-		margin: 1em 0.75em !important;
+		width: 75%;
+		padding: 1.75em 0;
+		margin: 0;
+		border-color: #f2f2f2;
+		border-style: solid;
+		border-width: 0 0 1px 0;
+	}
+	label{
+		width: 25%;
+		display: inline-block;
+		margin-top: 1.75em;
+		vertical-align: top;
+	}
+	.representatives{
+		margin-left: 25%;
+	}
+	.check_boxes{
+		margin-right: 0.75em;
+		input[type="checkbox"], input[type="radio"]{
+			width: 20px !important;
+		}
+		label{
+			width: 75%;
+		}
+	}
+	.form-actions{
+		margin: 2em auto;
+		text-align: center;
+		max-width: 300px;
 	}
 }
